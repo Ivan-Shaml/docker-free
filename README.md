@@ -54,8 +54,8 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
 
 (In WSL/Ubuntu)
 
-Execute the [docker-create-certs.sh](docker-create-certs.sh) script. It will generate the keys and certificates
-and put them in their right place.
+Execute the [docker-create-certs.sh](docker-create-certs.sh) script. It will generate custom keys and certificates
+needed for docker engine and put them in their right place.
 
 It should output something like this:
 
@@ -78,9 +78,9 @@ Set the following environment variables in Windows OS:
   DOCKER_HOST=tcp://localhost:2376
   DOCKER_TLS_VERIFY=1
   DOCKER_CERT_PATH=%USERPROFILE%\.docker
-
 ```
 
+The generated certificates will be valid for the next 50 years. Should be enough 😄
 
 <br>
 <br>
@@ -225,12 +225,12 @@ If you are a Java developer and use TestContainers, then you use the project in
 <br>
 <br>
 
-### Step 7 - Make WSL2 start automatically when Windows starts (optional)
+### Step 7 - Make WSL start automatically when Windows starts (optional)
 
-Personally, I can live with always starting a WSL2/Ubuntu session in order to have my docker running. 
+Personally, I can live with always starting a WSL/Ubuntu session in order to have my docker running. 
 After all, WSL2 does take up some resources, although it is surprisingly effective.
 
-However, you may want that WSL2/Ubuntu is _always_ started.
+However, you may want that WSL/Ubuntu is _always_ started.
 For this purpose, [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) can be used.
 If you do not already have this tool installed, then please do. 
 
