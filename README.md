@@ -17,8 +17,8 @@ containers. However, the latter is really, really rare, so it shouldn't be somet
 
 ## Alternatives
 
-- Rancher Desktop ? Installs too many other things for my taste.
-- Podman?  Many tools expect docker, not Podman.
+- **Rancher Desktop**? Installs too many other things for my taste.
+- **Podman**?  Many tools expect docker, not Podman.
 
 <br>
 <br>
