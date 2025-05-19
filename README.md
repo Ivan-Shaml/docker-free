@@ -225,8 +225,12 @@ If you are a Java developer and use TestContainers, then you use the project in
 <br>
 <br>
 
-### Step 7-  Make WSL2 start automatically when Windows starts (optional)
+### Step 7 - Make WSL2 start automatically when Windows starts (optional)
 
+Personally, I can live with always starting a WSL2/Ubuntu session in order to have my docker running. 
+After all, WSL2 does take up some resources, although it is surprisingly effective.
+
+However, you may want that WSL2/Ubuntu is _always_ started.
 For this purpose, [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) can be used.
 If you do not already have this tool installed, then please do. 
 
