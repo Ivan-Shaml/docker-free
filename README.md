@@ -211,6 +211,9 @@ docker run hello-world
 This should print a lot of stuff on the console, most importantly, "Hello from Docker!
 
 
+<br>
+<br>
+
 ### Step 6c - Verify your docker engine installation with TestContainers (from Windows)
 
 (In Windows)
