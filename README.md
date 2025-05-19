@@ -221,3 +221,23 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 If you are a Java developer and use TestContainers, then you use the project in 
 [testcontainers-verification](testcontainers-verification/) to verify that it works.
 
+
+<br>
+<br>
+
+### Step 7-  Make WSL2 start automatically when Windows starts (optional)
+
+For this purpose, [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/) can be used.
+If you do not already have this tool installed, then please do. 
+
+You can configure Windows Terminal to start automatically when Windows starts (or more precisely: when you log in, as it is not a background service)
+and then you can make sure that Windows Terminal always starts out with an Ubuntu sesssion. 
+
+Here is what it looks like in the _Settings_ for Windows Terminal:
+
+
+![image](https://github.com/user-attachments/assets/af17aa86-1aac-4778-8f08-e0895e324c24)
+
+
+Voila. Because the Terminal starts an Ubuntu shell it effectively needs to start WSL too.
+
