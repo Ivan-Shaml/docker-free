@@ -13,6 +13,8 @@ You can use it from Windows or WSL2/Linux applications alike. It will only be ab
 containers. However, the latter is really, really rare, so it shouldn't be something you would miss.
 
 
+<br>
+
 ## Prerequisites
 
 This guide assumes that you already have WSL2 running with an Ubuntu distro, v22 or later.
