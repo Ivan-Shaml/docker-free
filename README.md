@@ -45,7 +45,8 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
    This can be verified with the `groups` command. This means you don't have to use sudo everytime you want to use the `docker` command in
    Ubuntu.
 
-
+If you want, you can verify your docker engine installation at this point by using **Step 6a**. However, the docker daemon will not 
+yet have been secured, nor is it yet available from Windows side.
 
 <br>
 <br>
@@ -54,8 +55,18 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
 
 (In WSL/Ubuntu)
 
+You will need to secure your docker daemon from unauthorized access. Docker (the company) says that in the future they will
+no longer allow unprotected daemons to start. It works for now but we better make ourselves future proof. And safe.
+
+The way to do this is to protect the docker daemon with mTLS (mutual TLS). The docker daemon will encrypt the traffic with
+a server-side certificate so effectively it will be exposing `https`, not `http`. At the same time, the server will only
+allow clients which provide an acceptable client-side certificate during the TLS handshake, to connect. In others words: 
+both sides of the connection have a certificate/private-key combo.
+
+How?
+
 Execute the [docker-create-certs.sh](docker-create-certs.sh) script. It will generate custom keys and certificates
-needed for docker engine and put them in their right place.
+needed for docker engine _and_ put them in their right place.
 
 It should output something like this:
 
