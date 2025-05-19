@@ -15,6 +15,14 @@ containers. However, the latter is really, really rare, so it shouldn't be somet
 
 <br>
 
+## Alternatives
+
+- Rancher Desktop ? Installs too many other things for my taste.
+- Podman?  Many tools expect docker, not Podman.
+
+<br>
+<br>
+
 ## Prerequisites
 
 This guide assumes that you already have WSL2 running with an Ubuntu distro, v22 or later.
