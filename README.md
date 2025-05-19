@@ -34,7 +34,7 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
 
 (In WSL/Ubuntu)
 
-Execute the [docker-create-certs.sh] script. It will generate the keys and certificates
+Execute the [docker-create-certs.sh](docker-create-certs.sh) script. It will generate the keys and certificates
 and put them in their right place.
 
 It should output something like this:
