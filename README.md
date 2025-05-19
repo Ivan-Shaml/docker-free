@@ -175,6 +175,11 @@ into that one. Then make sure your Windows `PATH` variable includes that directo
 (If you try it at this point, it may not work, because some environment variables still need to be set ... and
 indeed the `docker.exe` uses those to figure out where to find the docker daemon. So continue to next step.)
 
+Note: The docker CLI is really just a binary that helps you communicate with the docker daemon, using the docker API.
+The TestContainers library does not depend on the docker CLI as it can communicate directly with the docker daemon 
+simply by using the docker API (which is essentially a http REST api). For this reason, the docker CLI is _not_
+a requirement for TestContainers.
+
 <br>
 <br>
 
