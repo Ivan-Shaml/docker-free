@@ -149,7 +149,25 @@ ps -efd | grep dockerd
 <br>
 <br>
 
-### Step 4 - Define Windows environment variables
+### Step 4 - Install docker CLI in Windows (optional)
+
+At this point, you already have a docker CLI, the `docker` command, in WSL/Ubuntu.
+If you also need one in Windows, then here is how:
+
+
+1. Grab Docker Inc's pre-build binary for Windows from [HERE](https://download.docker.com/win/static/stable/x86_64). 
+Use the latest version. All you need is the file named `docker.exe`.
+1. Put `docker.exe` somewhere on your disk. For example, create a directory named `C:\Program Files\Tools` and put it
+into that one. Then make sure your Windows `PATH` variable includes that directory.
+1. You should now be able to use the `docker` command.
+
+(If you try it at this point, it may not work, because some environment variables still need to be set ... and
+indeed the `docker.exe` uses those to figure out where to find the docker daemon. So continue to next step.)
+
+<br>
+<br>
+
+### Step 5 - Define Windows environment variables
 
 Set environment variables as follows:
 
@@ -167,7 +185,7 @@ Example:
 <br>
 <br>
 
-### Step 5a - Verify your docker engine installation (from WSL/Ubuntu)
+### Step 6a - Verify your docker engine installation (from WSL/Ubuntu)
 
 (In WSL/Ubuntu)
 
@@ -181,7 +199,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 <br>
 <br>
 
-### Step 5b - Verify your docker engine installation (from Windows)
+### Step 6b - Verify your docker engine installation (from Windows)
 
 (In Windows)
 
