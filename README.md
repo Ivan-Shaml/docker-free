@@ -193,7 +193,7 @@ Example:
 docker run hello-world
 ```
 
-This should print a lot of stuff on the console, most importantly, "Hello from Docker!
+This should print a lot of stuff on the console, most importantly, "Hello from Docker!"
 
 
 <br>
@@ -208,7 +208,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 docker run hello-world
 ```
 
-This should print a lot of stuff on the console, most importantly, "Hello from Docker!
+This should print a lot of stuff on the console, most importantly, "Hello from Docker!"
 
 
 <br>
