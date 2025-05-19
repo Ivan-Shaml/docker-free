@@ -217,7 +217,7 @@ This should print a lot of stuff on the console, most importantly, "Hello from D
 
 ### Step 6b - Verify your docker engine installation (from Windows)
 
-(In Windows)
+(In Windows - this step assumes you've done Step 4 previously)
 
 
 ```
