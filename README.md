@@ -125,6 +125,18 @@ ps -efd | grep dockerd
 
 ### Step 4 - Define Windows environment variables
 
+Set environment variables as follows:
+
+```
+DOCKER_HOST=tcp://localhost:2376
+DOCKER_TLS_VERIFY=1
+DOCKER_CERT_PATH=%USERPROFILE%\.docker
+```
+
+Example:
+
+![image](https://github.com/user-attachments/assets/28b347c6-39eb-4600-870f-9424fb25da76)
+
 
 
 ### Step 5a - Verify your docker engine installation (from WSL/Ubuntu)
