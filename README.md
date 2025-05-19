@@ -210,3 +210,11 @@ docker run hello-world
 
 This should print a lot of stuff on the console, most importantly, "Hello from Docker!
 
+
+### Step 6c - Verify your docker engine installation with TestContainers (from Windows)
+
+(In Windows)
+
+If you are a Java developer and use TestContainers, then you use the project in 
+[testcontainers-verification](testcontainers-verification/) to verify that it works.
+
