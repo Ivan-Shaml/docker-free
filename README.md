@@ -24,6 +24,9 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
 ## Installation
 
 
+<br>
+<br>
+
 ### Step 1 - Install docker engine inside WSL
 
 1. Install docker engine inside WSL (Ubuntu) by following the [guide from Docker Inc.](https://docs.docker.com/engine/install/ubuntu).
@@ -33,6 +36,9 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
    Ubuntu.
 
 
+
+<br>
+<br>
 
 ### Step 2 - Generate certificates for docker engine
 
@@ -66,7 +72,8 @@ Set the following environment variables in Windows OS:
 ```
 
 
-
+<br>
+<br>
 
 ### Step 3 - Make the docker daemon run on TCP (too)
 
@@ -127,6 +134,9 @@ Verify:
 ps -efd | grep dockerd
 ```
 
+<br>
+<br>
+
 ### Step 4 - Define Windows environment variables
 
 Set environment variables as follows:
@@ -142,6 +152,8 @@ Example:
 ![image](https://github.com/user-attachments/assets/28b347c6-39eb-4600-870f-9424fb25da76)
 
 
+<br>
+<br>
 
 ### Step 5a - Verify your docker engine installation (from WSL/Ubuntu)
 
@@ -153,6 +165,9 @@ docker run hello-world
 
 This should print a lot of stuff on the console, most importantly, "Hello from Docker!
 
+
+<br>
+<br>
 
 ### Step 5b - Verify your docker engine installation (from Windows)
 
