@@ -42,7 +42,7 @@ This guide assumes that you already have WSL2 running with an Ubuntu distro, v22
 1. Install docker engine inside WSL (Ubuntu) by following the [guide from Docker Inc.](https://docs.docker.com/engine/install/ubuntu).
 1. Post-installation:   `sudo usermod -aG docker $USER`
 1. Logout of your Ubuntu shell and login in again. You should now be a member of the `docker` group.
-   This can be verified with the `groups` command. This means you want have to use sudo everytime you want to use the `docker` command in
+   This can be verified with the `groups` command. This means you don't have to use sudo everytime you want to use the `docker` command in
    Ubuntu.
 
 
