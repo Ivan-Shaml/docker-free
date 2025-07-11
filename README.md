@@ -125,7 +125,12 @@ Create and apply an override on the Systemd service named `docker`:
 
 ```bash
 sudo mkdir -p /etc/systemd/system/docker.service.d
-sudo cat <<EOF > /etc/systemd/system/docker.service.d/override.conf
+sudo nano /etc/systemd/system/docker.service.d/override.conf
+```
+
+Change the contents of the file to be:
+
+```ini
 [Service]
 ExecStart=
 ExecStart=/usr/bin/dockerd \
@@ -136,7 +141,10 @@ ExecStart=/usr/bin/dockerd \
     --tlscacert=/etc/docker/certs/ca.pem \
     --tlscert=/etc/docker/certs/cert.pem \
     --tlskey=/etc/docker/certs/key.pem
-EOF
+```
+Save (Press `Ctrl+X`, then press `Y`, then press `Enter`) <br>
+Then run:
+```bash
 sudo systemctl daemon-reload --system
 sudo systemctl restart docker.service
 ```
@@ -198,6 +206,7 @@ Example:
 
 ![image](https://github.com/user-attachments/assets/28b347c6-39eb-4600-870f-9424fb25da76)
 
+*Logout and login from your Windows account, in order the changes to take effect.*
 
 <br>
 <br>
